@@ -1,9 +1,7 @@
-# Simple Marks Evaluation Program
-
 total = 0
-subjects = int(input("Enter number of subjects: "))
+marksof_subjects = int(input("Enter number of subjects: "))
 
-for i in range(subjects):
+for i in range(marksof_subjects):
     marks = int(input(f"Enter marks for subject {i+1}: "))
     total += marks
 
@@ -12,11 +10,11 @@ for i in range(subjects):
     else:
         print("Result: Fail")
 
-# Average calculation
-average = total / subjects
+
+average = total / marksof_subjects
 print("Average Marks =", average)
 
-# Grade based on average
+
 if average >= 90:
     print("Grade: A")
 elif average >= 75:
